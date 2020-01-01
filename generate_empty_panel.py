@@ -7,7 +7,7 @@ lst_dfToBeConcat = []
 lst_keys = []
 
 for cli in lst_uniqueClient:
-    lst_dfToBeConcat.append(pd.DataFrame(pd.date_range(start='1/4/2012', end='30/09/2012')))
+    lst_dfToBeConcat.append(pd.DataFrame(pd.date_range(start='2012-04-01', end='2012-09-30')))
     lst_keys.append(cli)
 
 df_xtEmtpy = pd.concat(lst_dfToBeConcat,
