@@ -1,0 +1,5 @@
+foreach var of varlist  VAR1 VAR2 VAR3 {
+by clientid: egen `var'_mean= mean(`var')
+by clientid: egen `var'_sd = sd(`var')
+by clientid: gen `var'_std = (`var'-`var'_mean)/`var'_sd
+}
